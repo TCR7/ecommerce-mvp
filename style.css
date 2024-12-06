@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    font-family: "Jaldi", sans-serif;
+    background-color: #272626;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-x:hidden;
+}
+
+
+.login-box {
+    background-color: #494949;
+    padding: 20px 30px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 7px 6px rgba(1, 1, 1, 0.5);
+}
+
+.login-box h2 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 1.7rem;
+}
+
+.login-box input:focus{
+    outline:none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: #D9D9D9;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+input::placeholder {
+    color: #b0b0b0;
+}
+
+.btn-submit {
+    background-color: #c62828;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    width: 100%;
+    box-shadow: inset 0 21px 6px rgba(0, 0, 0, 0.5);
+}
+
+.btn-submit:hover {
+    background-color: #b71c1c;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox input {
+    margin-right: 5px;
+    accent-color: #c62828;
+}
+
+.forgot-password {
+    color: #b0b0b0;
+    text-decoration: none;
+    margin-bottom: 3px;
+    margin-left:30px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+
+    
+
+    .login-box {
+        padding: 15px;
+    }
+
+    .btn-submit {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    .options {
+        font-size: 0.7rem;
+    }
+}

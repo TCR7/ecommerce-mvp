@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background-img{
+    background: url('imgs/imagem fundo.jpg') no-repeat center center fixed;
+    background-size: cover; /* Cobre toda a área */
+    height: 100vh; /* Garante que o fundo cubra toda a altura da tela */
+    margin: 0;
+    padding: 0;
+}
+
+.sessao-incial, .navbar {
+    position: relative;
+    z-index: 2; /* Mantém o conteúdo acima do fundo */
+    color: white; /* Texto branco para melhor contraste */
+  }
+  
+  /* Adicionar um overlay escurecido ao fundo */
+  .background-img::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro translúcido */
+    z-index: 1; /* Mantém o background atrás */
+  }
+
+.navbar-nav .nav-link:hover {
+    background-color: #72727262; /* Fundo do item no hover */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: all 0.3s ease; /* Transição suave */
+  }
+
+.container{
+    position: relative;
+    z-index: 2;
+}
+
+.card-body {
+    min-height: 150px; /* Ajuste conforme necessário */
+}
+.navbar{
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    background-color:transparent;
+    z-index: 1030;
+    position: fixed;
+    height: 45px;
+}
+
+.navbar.scrolled{
+    background-color:rgba(0, 0, 0, 0.8);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.cart-items{
+    max-height: 200px;
+    overflow-y: auto;
+}
+  
+  .dropdown-item {
+    color: #000; /* Garante que o texto esteja visível */
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f8f9fa; /* Fundo claro no hover */
+  }
+  .dropdown-toggle{
+    z-index: 1050;
+  }
+
+  .dropdown {
+    position: relative;
+    z-index: 1050; /* Garante que o dropdown esteja acima */
+  }
+  
+  .dropdown-menu {
+    z-index: 1051;
+    position: absolute; /* Permite que ele fique visível acima de outros elementos */
+  }
+  
+
+  .container {
+    overflow: visible;
+  }
+
+
+
